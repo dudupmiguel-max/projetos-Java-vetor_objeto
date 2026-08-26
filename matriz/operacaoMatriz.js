@@ -48,3 +48,24 @@ for(let j=0; j < mat[0].length; j++){
 }
 
 console.log("Segue as somas das colunas: " + somacolunas)
+
+// maior e menor elemento
+let maior = [0][0]
+let menor = [0][0]
+let menori = 0
+let menorj = 0
+let maiori = 0
+let maiorj = 0
+
+for(let i =1;  i<mat.length; i++) { 
+  for(let j = 0 ; j < mat.length ; j++) { 
+    if(mat[i][j] < menor) { 
+        menor = mat[i][j]
+    }
+    if(mat[i][j] > maior) { 
+        maior = mat[i][j]
+    }
+}
+}
+console.log("O maior numero é: " , maior + " na posição: " + maiori + " " + maiorj)
+console.log("O menor numero é: " , menor + " na posição: " + menori + " " + menorj)
